@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Handicraft_proj.props" />
+</Project>
