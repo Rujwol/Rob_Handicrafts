@@ -1,7 +1,51 @@
-﻿
-@{
-    ViewData["Title"] = "AllProduct";
-}
+﻿@model IEnumerable<Handicraft_proj.Models.Products.Product>
 
-<h1>AllProduct</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handicraft Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
 
+        .product {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .product h3 {
+                color: #333;
+            }
+
+            .product p {
+                color: #666;
+            }
+
+            .product img {
+                max-width: 100px;
+                height: auto;
+                margin-bottom: 10px;
+            }
+    </style>
+</head>
+<body>
+    <h1>Handicraft Products</h1>
+
+    @foreach (var product in Model)
+    {
+        <div class="product">
+            <img src="data:@(product.ImageMimeType);base64,@Convert.ToBase64String(product.ImageData)" alt="@product.Name" /> <!-- Display product image from binary data -->
+            <h3>@product.Name - Rs.@product.Price</h3>
+            <p>@product.Description</p>
+            <p>Category: @product.Category</p>
+        </div>
+    }
+</body>
+</html>

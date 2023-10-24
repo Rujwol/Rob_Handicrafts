@@ -9550,11 +9550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Codes\\dotnet_projects\\Handicraft_proj\\Handicraft_proj.csproj",
+      "projectUniqueName": "D:\\Codes\\dotnet_projects\\Robinson\\Handicraft_proj\\Handicraft_proj.csproj",
       "projectName": "Handicraft_proj",
-      "projectPath": "D:\\Codes\\dotnet_projects\\Handicraft_proj\\Handicraft_proj.csproj",
+      "projectPath": "D:\\Codes\\dotnet_projects\\Robinson\\Handicraft_proj\\Handicraft_proj.csproj",
       "packagesPath": "C:\\Users\\rujwo\\.nuget\\packages\\",
-      "outputPath": "D:\\Codes\\dotnet_projects\\Handicraft_proj\\obj\\",
+      "outputPath": "D:\\Codes\\dotnet_projects\\Robinson\\Handicraft_proj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
